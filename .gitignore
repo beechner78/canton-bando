@@ -1,0 +1,8 @@
+# don't check-in anything in a dependency directory
+node_modules
+
+# don't check-in compiled server code, build it
+release
+
+# don't check in typings
+server/typings/**/*
