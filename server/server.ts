@@ -11,7 +11,8 @@ var app = express();
 
 // configuration
 // static content (html / css / images)
-app.use(express.static('public', express.static(path.resolve(__dirname, '../../public'))));
+app.use('/public', express.static(path.resolve(__dirname, '../../public')));
+app.use('/node_modules', express.static(path.resolve(__dirname, '../../node_modules')));
 // GZIP compression for content 
 app.use(compression());
 
