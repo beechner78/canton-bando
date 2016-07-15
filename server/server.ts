@@ -1,3 +1,7 @@
+/**
+* Very simple server implementation
+* @author Paul Beechner
+*/
 import express = require('express');
 import path = require('path');
 import compression = require('compression');
@@ -20,6 +24,6 @@ app.get('/*', renderIndex);
 var server = app.listen(port, function () {
     var host = server.address().address;
     var port = server.address().port;
-    console.log('This express app is listening on port:' + port);
+    console.log('Port:' + port);
     console.log(__dirname);
 });
